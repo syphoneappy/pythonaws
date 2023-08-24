@@ -4,7 +4,6 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-pyyaml = "*"
 asgiref = "==3.7.2"
 attrs = "==23.1.0"
 bcrypt = "==4.0.1"
@@ -60,4 +59,4 @@ whitenoise = "==6.5.0"
 [dev-packages]
 
 [requires]
-python_version = "3.8"
+python_version = "2.7"
