@@ -56,8 +56,18 @@ jobs:
           
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v2
+
+  
         id: deploy-to-webapp
         with:
           app-name: 'pythonawswebapp'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_EC9CF28DD6204D908A38E2760C558412 }}
+    env:
+        AZURE_WEBAPP_PACKAGE_PATH: .
+        
+
+
+
+
+
