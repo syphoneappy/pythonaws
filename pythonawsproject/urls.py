@@ -20,14 +20,20 @@ from . import settings
 from django.conf.urls.static import static
 from django.views.static import serve
 from . import views
+from django.views.generic import TemplateView
 
 urlpatterns = [
-    path("", views.index, name="index"),
-    path("admin/", admin.site.urls),
-    path("", include("pythonawsapp.urls")),
-    re_path(r"^static/(?P<path>.*)$", serve, {"document_root": settings.STATIC_ROOT}),
-    re_path(r"^(?P<path>.*)$", serve, {"document_root": settings.STATIC_ROOT}),
+    re_path(
+        r"^static/(?P<path>.*)$", serve, {"document_root": settings.STATIC_ROOT}
+    ),  # Serves static files
+    path("", views.index, name="index"),  # Matches the root URL
+    path("admin/", admin.site.urls),  # Admin URL
+    path("", include("pythonawsapp.urls")),  # Includes app-specific URLs
+    re_path(
+        r"^(?P<path>.*)$", TemplateView.as_view(template_name="index.html")
+    ),  # Catches all other URLs
 ]
+
 
 if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
