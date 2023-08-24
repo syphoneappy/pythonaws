@@ -45,7 +45,7 @@ INSTALLED_APPS = [
     "rest_framework.authtoken",
 ]
 
-CORS_ALLOW_CREDENTIALS = True
+
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
     "https://pythonaws.azurewebsites.net",
