@@ -8,7 +8,7 @@ pnpm-debug.log*
 lerna-debug.log*
 
 /python-aws-frontend/node_modules
-dist
+
 dist-ssr
 *.local
 
