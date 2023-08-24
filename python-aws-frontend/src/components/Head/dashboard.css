@@ -1,0 +1,41 @@
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.button {
+    width: 120px;
+    height: 120px;
+    background-color: transparent;
+    border: 2px solid #007BFF;
+    color: #007BFF;
+    border-radius: 50%;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+}
+
+.upload-button {
+    border-color: #007BFF;
+    color: #007BFF;
+}
+
+.download-button {
+    border-color: #28A745;
+    color: #28A745;
+}
+
+input[type="file"] {
+    display: none;
+}
+ul{
+    align-items: center;
+    justify-content: center;
+}

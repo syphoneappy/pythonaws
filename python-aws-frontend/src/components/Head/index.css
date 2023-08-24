@@ -1,0 +1,105 @@
+
+.group4-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.group4-rectangle1 {
+  width: 50%;
+  max-width: 50%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.group4-frame1 {
+  width: 350px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.group4-text06 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.group4-line1 {
+  width: 100%;
+  height: 1px;
+  background-color: #ddd;
+  margin: 20px 0;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-weight: bold;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.form-text {
+  font-size: 14px;
+  color: #777;
+}
+
+.toggle-password {
+  position: relative;
+  cursor: pointer;
+}
+
+.toggle-password i {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.alert-danger {
+  font-size: 14px;
+  margin-top: 10px;
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.group4-text08 {
+  font-size: 20px;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.group4-text08:hover {
+  background-color: #0056b3;
+}
