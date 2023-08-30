@@ -114,11 +114,11 @@ AUTHENTICATION_BACKENDS = [
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": "pythonawsfullstack",
-        "USER": "python_aws",
-        "PASSWORD": "FunnyFun992",
-        "HOST": "aws.c3htomhmoysi.us-east-1.rds.amazonaws.com",
-        "PORT": "5432",
+        "NAME": os.environ["pythonawsfullstack"],
+        "USER": ,
+        "PASSWORD": os.environ["DB_PASSWORD"],
+        "HOST": os.environ["DB_HOST"],
+        "PORT": os.environ["DB_PORT"],
         "OPTIONS": {"sslmode": "require"},
     }
 }
@@ -173,14 +173,14 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-AWS_ACCESS_KEY_ID = "AKIA6IGAUNWYJQIMA5TS"
-AWS_SECRET_ACCESS_KEY = "Y8AQ3a1de6Y9FgBce6jLMYFJCC4e5k6Q1UuFnoDy"
-AWS_STORAGE_BUCKET_NAME = "dummybucketdjango"
-AWS_S3_SIGNATURE_NAME = ("s3v4",)
-AWS_S3_REGION_NAME = "us-east-1"
+AWS_ACCESS_KEY_ID = os.environ["AWS_ACCESS_KEY_ID"]
+AWS_SECRET_ACCESS_KEY = os.environ["Y8AQ3a1de6Y9FgBce6jLMYFJCC4e5k6Q1UuFnoDy"]
+AWS_STORAGE_BUCKET_NAME = os.environ["dummybucketdjango"]
+AWS_S3_SIGNATURE_NAME = os.environ["AWS_S3_SIGNATURE_NAME"]
+AWS_S3_REGION_NAME = os.environ["AWS_S3_REGION_NAME"]
 AWS_S3_FILE_OVERWRITE = False
 AWS_DEFAULT_ACL = None
 AWS_S3_VERITY = True
-DEFAULT_FILE_STORAGE = "storages.backends.s3boto3.S3Boto3Storage"
+DEFAULT_FILE_STORAGE = os.environ["DEFAULT_FILE_STORAGE"]
 
 # DEFAULT_FILE_STORAGE = "django.core.files.storage.FileSystemStorage"
