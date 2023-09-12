@@ -174,7 +174,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 AWS_ACCESS_KEY_ID = os.environ["AWS_ACCESS_KEY_ID"]
-AWS_SECRET_ACCESS_KEY = os.environ["Y8AQ3a1de6Y9FgBce6jLMYFJCC4e5k6Q1UuFnoDy"]
+AWS_SECRET_ACCESS_KEY = os.environ["AWS_SECRET_KEY_ID"]
 AWS_STORAGE_BUCKET_NAME = os.environ["dummybucketdjango"]
 AWS_S3_SIGNATURE_NAME = os.environ["AWS_S3_SIGNATURE_NAME"]
 AWS_S3_REGION_NAME = os.environ["AWS_S3_REGION_NAME"]
